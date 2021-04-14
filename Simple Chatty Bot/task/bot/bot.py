@@ -16,8 +16,7 @@ def guess_age():
     rem3 = int(input())
     rem5 = int(input())
     rem7 = int(input())
-    age = (rem3 * 7
-           0 + rem5 * 21 + rem7 * 15) % 105
+    age = (rem3 * 70 + rem5 * 21 + rem7 * 15) % 105
 
     print("Your age is " + str(age) + "; that's a good time to start programming!")
 
@@ -34,9 +33,17 @@ def count():
 
 def test():
     print("Let's test your programming knowledge.")
-    # write your code here
-    print('Completed, have a nice day!')
-
+    print("""Why do we use methods?
+    1. To repeat a statement multiple times.
+    2. To decompose a program into several small subroutines.
+    3. To determine the execution time of a program.
+    4. To interrupt the execution of a program.""")
+    n = int(input())
+    while n == 2:
+        if n == 2:
+            print("Completed, have a nice day!")
+        else:
+            print("Please, try again.")
 
 def end():
     print('Congratulations, have a nice day!')
@@ -46,5 +53,5 @@ greet('Aid', '2020')  # change it as you need
 remind_name()
 guess_age()
 count()
-# ...
+test()
 end()
